@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CRUDS</h1>
+        <h2>PRODUCT MANAGEMENET SYSTEM</h2>
+    </header>
+    <main>
+        <div id="section1" class="section1">
+            <input id="title" class="title" placeholder="title" type="text">
+            <input class="myinput" id="price" placeholder="pric" type="number">
+            <input class="myinput" id="taxes" placeholder="taxes" type="number">
+            <input class="myinput" id="ads" placeholder="ads" type="number">
+            <input class="myinput" id="discount" placeholder="discount" type="number">
+            <p id="total">Total:</p>
+            <input id="count" class="count" placeholder="count" type="number">
+            <input id="category" class="cat" placeholder="category" type="text">
+            <button id="create" onclick="createItem()" class="create">Create</button>
+            <button id="update" hidden onclick="confirmUpdate()" class="create">update</button>
+            <input class="search" id="search" placeholder="Search" type="text">
+            <button onclick="searchByTitle()" class="searchByTitle">Search By Title</button>
+            <button onclick="searchByCat()" class="searchByCat">Search By category</button>
+            <button id="deletAll" onclick="deletAll()" class="deletAll">deleAll(0)</button>
+        </div>
+        <div class="section2" id="section2">
+
+            </table>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
